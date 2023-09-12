@@ -17,7 +17,7 @@ export class FormularioComponent {
 
   formulario = new FormGroup({
     nombre: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.email),
     telefono: new FormControl('', Validators.required)
   });
 

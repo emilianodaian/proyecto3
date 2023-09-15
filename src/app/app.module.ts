@@ -11,17 +11,20 @@ import {MatFormFieldModule, matFormFieldAnimations} from '@angular/material/form
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormularioComponent } from './formulario/formulario.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent
+    FormularioComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { FormularioComponent } from './formulario/formulario.component';
     MatCheckboxModule,
     MatRadioModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

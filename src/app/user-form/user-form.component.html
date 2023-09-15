@@ -1,0 +1,23 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div>
+        <mat-form-field>
+        <input matInput placeholder="Nombre" formControlName="nombre">        
+    </mat-form-field>
+    </div>
+    
+    <div>
+        <mat-form-field>
+        <input matInput placeholder="Correo Electrónico" formControlName="email">
+    </mat-form-field>
+    </div>  
+
+    <div>
+        <button mat-raised-button type="submit">Guardar</button>
+    </div>
+    
+   
+</form> 
+
+<mat-divider></mat-divider>
+
+<br>
